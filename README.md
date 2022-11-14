@@ -20,7 +20,7 @@
 ##  🧐 About <a name = "about"></a>
 
 
-Write about 1-2 paragraphs describing the purpose of your project.
+Will update this section later...
 
 ---
 
@@ -52,3 +52,4 @@ Will update this section later...
 - [Python](https://python.org/ ) - Programming Language
 - [Pandas](https://pandas.pydata.org/ ) - Data Analysis
 - [PyTorch](https://pytorch.org/ ) - Machine Learning
+- [Prophet](https://facebook.github.io/prophet/ ) - Time Series Forecasting
