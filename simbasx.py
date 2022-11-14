@@ -12,8 +12,8 @@ def home():
     st.sidebar.markdown("# Home")
     nodes = []
     edges = []
-    nodes.append( Node(id="Simon_Bailey",
-                    label="Simon Bailey",
+    nodes.append( Node(id="SB",
+                    label="John Doe",
                     size=15,
                     shape="circularImage",
                     image="https://cdn.iconscout.com/icon/premium/png-256-thumb/graph-theory-1807124-1534162.png")
@@ -156,122 +156,122 @@ def home():
                     shape="circularImage",
                     image="https://cdn.iconscout.com/icon/premium/png-256-thumb/graph-theory-1807124-1534162.png")
                 ) # includes **kwargs
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="FEX",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="LKE",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="AVZ",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="MEA",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="MLS",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="CXO",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="LPM",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="A1G",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="AKE",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="FEG",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="NAE",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="CNB",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="FEX",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="ADV",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="PDI",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="WR1",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="SRR",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="FRB",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="PNT",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="LRV",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="AM7",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="MTC",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="1VG",
                     # **kwargs
                     )
                 )
-    edges.append( Edge(source="Simon_Bailey",
+    edges.append( Edge(source="SB",
                     target="HGEN",
                     # **kwargs
                     )
