@@ -414,25 +414,25 @@ def forecast():
         "FEX",
         "LKE.AX",
         "AVZ",
-        "MEA",
+        "MEA.AX",
         "MLS",
-        "CXO",
-        "LPM",
-        "A1G",
-        "AKE",
+        "CXO.AX",
+        "LPM.AX",
+        "A1G.AX",
+        "AKE.AX",
         "FEG",
-        "NAE",
+        "NAE.AX",
         "CNB",
         "ADV",
         "PDI",
-        "WR1",
+        "WR1.AX",
         "SRR",
         "FRB",
         "PNT",
-        "LRV",
-        "AM7",
+        "LRV.AX",
+        "AM7.AX",
         "MTC",
-        "1VG",
+        "1VG.AX",
         "HGEN",
     )
     selected_stock = st.selectbox("Select dataset for prediction", stocks)
@@ -487,7 +487,7 @@ def forecast():
     st.write(fig2)
 
 
-def page2():
+def page_2():
     st.markdown("# FEX")
     st.sidebar.markdown("# FEX")
     tickerSymbol = "FEX"
@@ -513,9 +513,9 @@ def page2():
     st.line_chart(tickerDf.Volume)
 
 
-def page3():
-    st.markdown("# LKE")
-    st.sidebar.markdown("# LKE")
+def page_3():
+    st.markdown("# LKE.AX")
+    st.sidebar.markdown("# LKE.AX")
     tickerSymbol = "LKE.AX"
     tickerData = yf.Ticker(tickerSymbol)
     tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
@@ -540,32 +540,6 @@ def page3():
 
 
 def page_4():
-    st.markdown("# LKE")
-    st.sidebar.markdown("# LKE")
-    tickerSymbol = "LKE"
-    tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
-    st.write(
-        """
-    ## Closing Price
-    """
-    )
-    st.line_chart(tickerDf.Close)
-    st.write(
-        """
-    ## Closing Price
-    """
-    )
-    st.line_chart(tickerDf.Open)
-    st.write(
-        """
-    ## Volume Price
-    """
-    )
-    st.line_chart(tickerDf.Volume)
-
-
-def page_5():
     st.markdown("# AVZ")
     st.sidebar.markdown("# AVZ")
     tickerSymbol = "AVZ"
@@ -591,10 +565,10 @@ def page_5():
     st.line_chart(tickerDf.Volume)
 
 
-def page_6():
-    st.markdown("# MEA")
-    st.sidebar.markdown("# MEA")
-    tickerSymbol = "MEA"
+def page_5():
+    st.markdown("# MEA.AX")
+    st.sidebar.markdown("# MEA.AX")
+    tickerSymbol = "MEA.AX"
     tickerData = yf.Ticker(tickerSymbol)
     tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
     st.write(
@@ -617,7 +591,7 @@ def page_6():
     st.line_chart(tickerDf.Volume)
 
 
-def page_7():
+def page_6():
     st.markdown("# MLS")
     st.sidebar.markdown("# MLS")
     tickerSymbol = "MLS"
@@ -643,10 +617,36 @@ def page_7():
     st.line_chart(tickerDf.Volume)
 
 
+def page_7():
+    st.markdown("# CXO.AX")
+    st.sidebar.markdown("# CXO.AX")
+    tickerSymbol = "CXO.AX"
+    tickerData = yf.Ticker(tickerSymbol)
+    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    st.write(
+        """
+    ## Closing Price
+    """
+    )
+    st.line_chart(tickerDf.Close)
+    st.write(
+        """
+    ## Closing Price
+    """
+    )
+    st.line_chart(tickerDf.Open)
+    st.write(
+        """
+    ## Volume Price
+    """
+    )
+    st.line_chart(tickerDf.Volume)
+
+
 def page_8():
-    st.markdown("# CXO")
-    st.sidebar.markdown("# CXO")
-    tickerSymbol = "CXO"
+    st.markdown("# LPM.AX")
+    st.sidebar.markdown("# LPM.AX")
+    tickerSymbol = "LPM.AX"
     tickerData = yf.Ticker(tickerSymbol)
     tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
     st.write(
@@ -670,9 +670,9 @@ def page_8():
 
 
 def page_9():
-    st.markdown("# LPM")
-    st.sidebar.markdown("# LPM")
-    tickerSymbol = "LPM"
+    st.markdown("# A1G.AX")
+    st.sidebar.markdown("# A1G.AX")
+    tickerSymbol = "A1G.AX"
     tickerData = yf.Ticker(tickerSymbol)
     tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
     st.write(
@@ -696,9 +696,9 @@ def page_9():
 
 
 def page_10():
-    st.markdown("# A1G")
-    st.sidebar.markdown("# A1G")
-    tickerSymbol = "A1G"
+    st.markdown("# AKE.AX")
+    st.sidebar.markdown("# AKE.AX")
+    tickerSymbol = "AKE.AX"
     tickerData = yf.Ticker(tickerSymbol)
     tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
     st.write(
@@ -722,32 +722,6 @@ def page_10():
 
 
 def page_11():
-    st.markdown("# AKE")
-    st.sidebar.markdown("# AKE")
-    tickerSymbol = "AKE"
-    tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
-    st.write(
-        """
-    ## Closing Price
-    """
-    )
-    st.line_chart(tickerDf.Close)
-    st.write(
-        """
-    ## Closing Price
-    """
-    )
-    st.line_chart(tickerDf.Open)
-    st.write(
-        """
-    ## Volume Price
-    """
-    )
-    st.line_chart(tickerDf.Volume)
-
-
-def page_12():
     st.markdown("# FEG")
     st.sidebar.markdown("# FEG")
     tickerSymbol = "FEG"
@@ -773,10 +747,10 @@ def page_12():
     st.line_chart(tickerDf.Volume)
 
 
-def page_13():
-    st.markdown("# NAE")
-    st.sidebar.markdown("# NAE")
-    tickerSymbol = "NAE"
+def page_12():
+    st.markdown("# NAE.AX")
+    st.sidebar.markdown("# NAE.AX")
+    tickerSymbol = "NAE.AX"
     tickerData = yf.Ticker(tickerSymbol)
     tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
     st.write(
@@ -799,7 +773,7 @@ def page_13():
     st.line_chart(tickerDf.Volume)
 
 
-def page_14():
+def page_13():
     st.markdown("# CNB")
     st.sidebar.markdown("# CNB")
     tickerSymbol = "CNB"
@@ -825,33 +799,7 @@ def page_14():
     st.line_chart(tickerDf.Volume)
 
 
-def page_15():
-    st.markdown("# FEX")
-    st.sidebar.markdown("# FEX")
-    tickerSymbol = "FEX"
-    tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
-    st.write(
-        """
-    ## Closing Price
-    """
-    )
-    st.line_chart(tickerDf.Close)
-    st.write(
-        """
-    ## Closing Price
-    """
-    )
-    st.line_chart(tickerDf.Open)
-    st.write(
-        """
-    ## Volume Price
-    """
-    )
-    st.line_chart(tickerDf.Volume)
-
-
-def page_16():
+def page_14():
     st.markdown("# ADV")
     st.sidebar.markdown("# ADV")
     tickerSymbol = "ADV"
@@ -877,7 +825,7 @@ def page_16():
     st.line_chart(tickerDf.Volume)
 
 
-def page_17():
+def page_15():
     st.markdown("# PDI")
     st.sidebar.markdown("# PDI")
     tickerSymbol = "PDI"
@@ -903,10 +851,10 @@ def page_17():
     st.line_chart(tickerDf.Volume)
 
 
-def page_18():
-    st.markdown("# WR1")
-    st.sidebar.markdown("# WR1")
-    tickerSymbol = "WR1"
+def page_16():
+    st.markdown("# WR1.AX")
+    st.sidebar.markdown("# WR1.AX")
+    tickerSymbol = "WR1.AX"
     tickerData = yf.Ticker(tickerSymbol)
     tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
     st.write(
@@ -929,7 +877,7 @@ def page_18():
     st.line_chart(tickerDf.Volume)
 
 
-def page_19():
+def page_17():
     st.markdown("# SRR")
     st.sidebar.markdown("# SRR")
     tickerSymbol = "SRR"
@@ -955,7 +903,7 @@ def page_19():
     st.line_chart(tickerDf.Volume)
 
 
-def page_20():
+def page_18():
     st.markdown("# FRB")
     st.sidebar.markdown("# FRB")
     tickerSymbol = "FRB"
@@ -981,7 +929,7 @@ def page_20():
     st.line_chart(tickerDf.Volume)
 
 
-def page_21():
+def page_19():
     st.markdown("# PNT")
     st.sidebar.markdown("# PNT")
     tickerSymbol = "PNT"
@@ -1007,59 +955,59 @@ def page_21():
     st.line_chart(tickerDf.Volume)
 
 
+def page_20():
+    st.markdown("# LRV.AX")
+    st.sidebar.markdown("# LRV.AX")
+    tickerSymbol = "LRV.AX"
+    tickerData = yf.Ticker(tickerSymbol)
+    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    st.write(
+        """
+    ## Closing Price
+    """
+    )
+    st.line_chart(tickerDf.Close)
+    st.write(
+        """
+    ## Closing Price
+    """
+    )
+    st.line_chart(tickerDf.Open)
+    st.write(
+        """
+    ## Volume Price
+    """
+    )
+    st.line_chart(tickerDf.Volume)
+
+
+def page_21():
+    st.markdown("# AM7.AX")
+    st.sidebar.markdown("# AM7.AX")
+    tickerSymbol = "AM7.AX"
+    tickerData = yf.Ticker(tickerSymbol)
+    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    st.write(
+        """
+    ## Closing Price
+    """
+    )
+    st.line_chart(tickerDf.Close)
+    st.write(
+        """
+    ## Closing Price
+    """
+    )
+    st.line_chart(tickerDf.Open)
+    st.write(
+        """
+    ## Volume Price
+    """
+    )
+    st.line_chart(tickerDf.Volume)
+
+
 def page_22():
-    st.markdown("# LRV")
-    st.sidebar.markdown("# LRV")
-    tickerSymbol = "LRV"
-    tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
-    st.write(
-        """
-    ## Closing Price
-    """
-    )
-    st.line_chart(tickerDf.Close)
-    st.write(
-        """
-    ## Closing Price
-    """
-    )
-    st.line_chart(tickerDf.Open)
-    st.write(
-        """
-    ## Volume Price
-    """
-    )
-    st.line_chart(tickerDf.Volume)
-
-
-def page_23():
-    st.markdown("# AM7")
-    st.sidebar.markdown("# AM7")
-    tickerSymbol = "AM7"
-    tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
-    st.write(
-        """
-    ## Closing Price
-    """
-    )
-    st.line_chart(tickerDf.Close)
-    st.write(
-        """
-    ## Closing Price
-    """
-    )
-    st.line_chart(tickerDf.Open)
-    st.write(
-        """
-    ## Volume Price
-    """
-    )
-    st.line_chart(tickerDf.Volume)
-
-
-def page_24():
     st.markdown("# MTC")
     st.sidebar.markdown("# MTC")
     tickerSymbol = "MTC"
@@ -1085,10 +1033,10 @@ def page_24():
     st.line_chart(tickerDf.Volume)
 
 
-def page_25():
-    st.markdown("# 1VG")
-    st.sidebar.markdown("# 1VG")
-    tickerSymbol = "1VG"
+def page_23():
+    st.markdown("# 1VG.AX")
+    st.sidebar.markdown("# 1VG.AX")
+    tickerSymbol = "1VG.AX"
     tickerData = yf.Ticker(tickerSymbol)
     tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
     st.write(
@@ -1111,7 +1059,7 @@ def page_25():
     st.line_chart(tickerDf.Volume)
 
 
-def page_26():
+def page_24():
     st.markdown("# HGEN")
     st.sidebar.markdown("# HGEN")
     tickerSymbol = "HGEN"
