@@ -1,4 +1,4 @@
-![simbasx](assets\simbasx.jpg)
+![simbasx](assets/simbasx.jpg)
 
 <h3 align="center">SimbASX 📈</H3>
 
