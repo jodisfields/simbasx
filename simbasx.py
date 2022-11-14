@@ -12,7 +12,6 @@ TODAY = date.today().strftime("%Y-%m-%d")
 
 
 def home():
-    st.sidebar("# Forecasting")
     st.sidebar("## FEX")
     st.sidebar("## LKE.AX")
     st.sidebar("## AVZ")
