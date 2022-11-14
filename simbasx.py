@@ -412,7 +412,7 @@ def forecast():
     st.title("SimbASX Forecast")
     stocks = (
         "FEX",
-        "LKE",
+        "LKE.AX",
         "AVZ",
         "MEA",
         "MLS",
@@ -516,7 +516,7 @@ def page2():
 def page3():
     st.markdown("# LKE")
     st.sidebar.markdown("# LKE")
-    tickerSymbol = "LKE"
+    tickerSymbol = "LKE.AX"
     tickerData = yf.Ticker(tickerSymbol)
     tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
     st.write(
