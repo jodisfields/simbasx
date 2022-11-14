@@ -13,7 +13,6 @@ TODAY = date.today().strftime("%Y-%m-%d")
 
 def home():
     st.markdown("# Home")
-    st.sidebar.markdown("# Home")
     nodes = []
     edges = []
     nodes.append(
@@ -434,6 +433,7 @@ def forecast():
         "MTC",
         "1VG.AX",
         "HGEN",
+        "SYA.AX",
     )
     selected_stock = st.selectbox("Select dataset for prediction", stocks)
     n_years = st.slider("Years of prediction:", 1, 4)
@@ -489,10 +489,9 @@ def forecast():
 
 def page_2():
     st.markdown("# FEX")
-    st.sidebar.markdown("# FEX")
     tickerSymbol = "FEX"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -515,10 +514,9 @@ def page_2():
 
 def page_3():
     st.markdown("# LKE.AX")
-    st.sidebar.markdown("# LKE.AX")
     tickerSymbol = "LKE.AX"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -541,10 +539,9 @@ def page_3():
 
 def page_4():
     st.markdown("# AVZ")
-    st.sidebar.markdown("# AVZ")
     tickerSymbol = "AVZ"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -567,10 +564,9 @@ def page_4():
 
 def page_5():
     st.markdown("# MEA.AX")
-    st.sidebar.markdown("# MEA.AX")
     tickerSymbol = "MEA.AX"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -593,10 +589,9 @@ def page_5():
 
 def page_6():
     st.markdown("# MLS")
-    st.sidebar.markdown("# MLS")
     tickerSymbol = "MLS"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -619,10 +614,9 @@ def page_6():
 
 def page_7():
     st.markdown("# CXO.AX")
-    st.sidebar.markdown("# CXO.AX")
     tickerSymbol = "CXO.AX"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -645,10 +639,9 @@ def page_7():
 
 def page_8():
     st.markdown("# LPM.AX")
-    st.sidebar.markdown("# LPM.AX")
     tickerSymbol = "LPM.AX"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -671,10 +664,9 @@ def page_8():
 
 def page_9():
     st.markdown("# A1G.AX")
-    st.sidebar.markdown("# A1G.AX")
     tickerSymbol = "A1G.AX"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -697,10 +689,9 @@ def page_9():
 
 def page_10():
     st.markdown("# AKE.AX")
-    st.sidebar.markdown("# AKE.AX")
     tickerSymbol = "AKE.AX"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -723,10 +714,9 @@ def page_10():
 
 def page_11():
     st.markdown("# FEG")
-    st.sidebar.markdown("# FEG")
     tickerSymbol = "FEG"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -749,10 +739,9 @@ def page_11():
 
 def page_12():
     st.markdown("# NAE.AX")
-    st.sidebar.markdown("# NAE.AX")
     tickerSymbol = "NAE.AX"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -775,10 +764,9 @@ def page_12():
 
 def page_13():
     st.markdown("# CNB")
-    st.sidebar.markdown("# CNB")
     tickerSymbol = "CNB"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -801,10 +789,9 @@ def page_13():
 
 def page_14():
     st.markdown("# ADV")
-    st.sidebar.markdown("# ADV")
     tickerSymbol = "ADV"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -827,10 +814,9 @@ def page_14():
 
 def page_15():
     st.markdown("# PDI")
-    st.sidebar.markdown("# PDI")
     tickerSymbol = "PDI"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -853,10 +839,9 @@ def page_15():
 
 def page_16():
     st.markdown("# WR1.AX")
-    st.sidebar.markdown("# WR1.AX")
     tickerSymbol = "WR1.AX"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -879,10 +864,9 @@ def page_16():
 
 def page_17():
     st.markdown("# SRR")
-    st.sidebar.markdown("# SRR")
     tickerSymbol = "SRR"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -905,10 +889,9 @@ def page_17():
 
 def page_18():
     st.markdown("# FRB")
-    st.sidebar.markdown("# FRB")
     tickerSymbol = "FRB"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -931,10 +914,9 @@ def page_18():
 
 def page_19():
     st.markdown("# PNT")
-    st.sidebar.markdown("# PNT")
     tickerSymbol = "PNT"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -957,10 +939,9 @@ def page_19():
 
 def page_20():
     st.markdown("# LRV.AX")
-    st.sidebar.markdown("# LRV.AX")
     tickerSymbol = "LRV.AX"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -983,10 +964,9 @@ def page_20():
 
 def page_21():
     st.markdown("# AM7.AX")
-    st.sidebar.markdown("# AM7.AX")
     tickerSymbol = "AM7.AX"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -1009,10 +989,9 @@ def page_21():
 
 def page_22():
     st.markdown("# MTC")
-    st.sidebar.markdown("# MTC")
     tickerSymbol = "MTC"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -1035,10 +1014,9 @@ def page_22():
 
 def page_23():
     st.markdown("# 1VG.AX")
-    st.sidebar.markdown("# 1VG.AX")
     tickerSymbol = "1VG.AX"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -1061,10 +1039,34 @@ def page_23():
 
 def page_24():
     st.markdown("# HGEN")
-    st.sidebar.markdown("# HGEN")
     tickerSymbol = "HGEN"
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period="1d", start="2010-5-31", end=TODAY)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
+    st.write(
+        """
+    ## Closing Price
+    """
+    )
+    st.line_chart(tickerDf.Close)
+    st.write(
+        """
+    ## Closing Price
+    """
+    )
+    st.line_chart(tickerDf.Open)
+    st.write(
+        """
+    ## Volume Price
+    """
+    )
+    st.line_chart(tickerDf.Volume)
+
+
+def page_25():
+    st.markdown("# SYA")
+    tickerSymbol = "SYA.AX"
+    tickerData = yf.Ticker(tickerSymbol)
+    tickerDf = tickerData.history(period="1d", start="2015-01-01", end=TODAY)
     st.write(
         """
     ## Closing Price
@@ -1110,7 +1112,8 @@ page_names_to_funcs = {
     "AM7.AX": page_21,
     "MTC": page_22,
     "1VG.AX": page_23,
-    "HGEN": page_24
+    "HGEN": page_24,
+    "SYA.AX": page_25
 }
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
 page_names_to_funcs[selected_page]()
