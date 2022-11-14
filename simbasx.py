@@ -409,7 +409,7 @@ def home():
 
 
 def forecast():
-    st.title("Stock Forecast App")
+    st.title("SimbASX Forecast")
     stocks = (
         "FEX",
         "LKE",
