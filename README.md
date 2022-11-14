@@ -2,7 +2,7 @@
 
 <h3 align="center">SimbASX 📈</H3>
 
-<p align="center"> SimbASX is built for all the networking professionals working in NOC's that have many stocks!
+<p align="center"> Python web application for all the networking professionals working in NOC's that have many stocks!
     <br>
 </p>
 
