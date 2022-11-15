@@ -14,7 +14,7 @@ st.set_page_config(layout="wide")
 
 
 def graph():
-    st.markdown("# Jogn Does Portfolio Graph")
+    st.markdown("# Portfolio Graph")
     nodes = []
     edges = []
     nodes.append(
